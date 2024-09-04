@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Container</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 1080px;
+            height: 1920px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .buttons {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /* Increased gap between buttons */
+            top: 60%; /* Adjusted to move the buttons down */
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .buttons button {
+            padding: 70px 100px; /* Further increased padding for larger buttons */
+            font-size: 40px; /* Further increased font size */
+            color: white;
+            background-color: #4c7840;
+            border: none;
+            border-radius: 15px; /* Further increased border-radius for a more modern look */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+        }
+        .buttons button:hover {
+            background-color: #3a5c30;
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.im.ge/2024/09/05/fgiRiT.AGENDA.png" alt="AGENDA">
+        <div class="buttons">
+            <button>Barbeiros</button>
+            <button>Agendar</button>
+        </div>
+    </div>
+</body>
+</html>
